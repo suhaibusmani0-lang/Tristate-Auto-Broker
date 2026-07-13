@@ -10,7 +10,7 @@ import io
 from typing import Dict, Any, List
 
 # Base URL from frontend/.env
-BASE_URL = "http://localhost:8000/api"
+BASE_URL = "https://tristateauto.zarneticofficial.workers.dev"
 
 # Test results tracking
 test_results = []
