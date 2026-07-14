@@ -125,7 +125,7 @@ const HomePage = () => {
               </button>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                {visibleVehicles.map((v) => (
+                {visibleVehicles?.map((v) => (
                   <VehicleCard key={v.id} vehicle={{ ...v, images: vehicleImageUrls(v) }} />
                 ))}
               </div>
