@@ -20,4 +20,13 @@ export const submitInquiry = (vehicleId, payload) => api.post(`/vehicles/${vehic
 
 // Helpers
 export const vehicleTitle = (v) => `${v.year} ${v.make} ${v.model}${v.trim ? ' ' + v.trim : ''}`;
-export const vehicleImageUrls = (v) => (v.images || []).map((i) => i.url);
+
+export const vehicleImageUrls = (v) => 
+  (v.images || []).map((i) => {
+    const url = i.url || i;
+    // Fix for broken local images
+    if (url.startsWith('/uploads')) {
+      return `${BACKEND_URL}${url}`;
+    }
+    return url;
+  });
