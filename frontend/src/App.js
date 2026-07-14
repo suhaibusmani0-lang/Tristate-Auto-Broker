@@ -19,7 +19,7 @@ import ContactPage from './pages/ContactPage';
 import AdminLoginPage from './pages/AdminLoginPage';
 import AdminDashboardPage from './pages/AdminDashboardPage';
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const BACKEND_URL = "https://tristate-auto-broker.onrender.com";
 const API = `${BACKEND_URL}/api`;
 
 function App() {

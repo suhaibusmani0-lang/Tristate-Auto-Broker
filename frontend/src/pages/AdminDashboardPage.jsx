@@ -35,7 +35,7 @@ const TABS = [
   { key: 'inquiries', label: 'Inquiries', icon: MessageSquare },
 ];
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const BACKEND_URL = process.env.REACT_APP_https://tristate-auto-broker.onrender.com/api;
 
 const imgSrc = (url) => (url && url.startsWith('/uploads') ? `${BACKEND_URL}${url}` : url);
 
