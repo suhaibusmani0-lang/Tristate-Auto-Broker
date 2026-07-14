@@ -1,4 +1,4 @@
-pip install flask-cors"""Seed vehicles for Tri State Auto Brokers"""
+"""Seed vehicles for Tri State Auto Brokers"""
 
 CAR_IMAGES = {
     'mercedes1': 'https://images.unsplash.com/photo-1582828715181-338a8e04ba53?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200',
