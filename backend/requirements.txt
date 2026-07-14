@@ -18,3 +18,4 @@ numpy
 google-api-core
 grpcio-status
 protobuf
+PyJWT
