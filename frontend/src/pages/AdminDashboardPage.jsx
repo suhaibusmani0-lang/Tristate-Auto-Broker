@@ -35,7 +35,8 @@ const TABS = [
   { key: 'inquiries', label: 'Inquiries', icon: MessageSquare },
 ];
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+// YAHAN FIX KIYA HAI: process.env hata kar direct URL daal diya
+const BACKEND_URL = "https://tristate-auto-broker.onrender.com";
 
 const imgSrc = (url) => (url && url.startsWith('/uploads') ? `${BACKEND_URL}${url}` : url);
 
