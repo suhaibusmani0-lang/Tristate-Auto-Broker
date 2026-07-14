@@ -286,7 +286,7 @@ const InventoryManager = ({ vehicles, loading, onCreate, onEdit, onDelete }) => 
               </tr>
             </thead>
             <tbody>
-              {vehicles.map((v) => (
+              {Array.isArray(vehicles) && vehicles.map((v) => (
                 <tr key={v.id} className="border-b border-white/5 hover:bg-white/[0.02]">
                   <td className="px-4 py-3">
                     {v.images?.[0]?.url ? (
